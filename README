@@ -1,3 +1,8 @@
+Assuming that all users, articles and feeds will already be in a database in their individual 
+collections. An article when created is not assigned to a feed immediately i.e it is created 
+independent of any feed. An article could be part of multiple feeds and so adding an article
+to a feed would be adding an existing article to a feed.
+
 =================================================================================================
 API ENDPOINTS
 =================================================================================================
