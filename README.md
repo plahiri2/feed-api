@@ -14,12 +14,12 @@ GET        |  /feedsapp/api/v1.0/feeds/[user_id]     | get all feeds with articl
 GET        |  /feedsap/api/v1.0/feeds/               | get all feeds
 --------------------------------------------------------------------------------------------------------------------
 POST       |  /feedsapp/api/v1.0/feeds/[id]          | subscribe, unsubscribe or add article to a feed decided by the
-		   |									     | id's passed through the 'subscribe','unsubscribe', 'article' fields
-		   |										 | in the json data with the POST request. Only one operation
-		   |										 | permitted per request- i.e subscribe to 1 feed, unsubcribe
-		   |										 | from 1 feed or add 1 article to a feed. Response is redirected
-		   |										 | to GET /feedsapp/api/v1.0/users/[user_id] for subscribe and
-		   |										 | unsubscribe and GET /feedsap/api/v1.0/feeds/ for article operation.
+	   |	                                     | id's passed through the 'subscribe','unsubscribe', 'article' fields
+           |				             | in the json data with the POST request. Only one operation
+           |				             | permitted per request- i.e subscribe to 1 feed, unsubcribe
+           |				             | from 1 feed or add 1 article to a feed. Response is redirected
+	   |				             | to GET /feedsapp/api/v1.0/users/[user_id] for subscribe and
+           |				             | unsubscribe and GET /feedsap/api/v1.0/feeds/ for article operation.
 ---------------------------------------------------------------------------------------------------------------------							
 
 The User, Feed, Article system has been implemented using Flask and MongoDB.
